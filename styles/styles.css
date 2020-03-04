@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Rokkitt:700&display=swap');
+
+body {
+  background-color: lightgray;
+  font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+}
+
+/* header */
+
+header > div {
+  background-color: #f72210;
+}
+
+.bottom-nav-item:not(.first) {
+  border-left: 1px solid lightgrey;
+}
+
+.bottom-nav-item {
+  font-size: 120%;
+  font-weight: 800;
+  line-height: 1.3;
+}
+
+.main-header {
+  /* display: none; */
+}
+
+.secendry-header {
+  display: none;
+}
+
+.logo {
+  font-family: Rokkitt, 'Courier New', Courier, monospace;
+}
+
+.logo-cont > p {
+  font-weight: 900;
+  margin-bottom: 0;
+  line-height: 0.8;
+}
+
+.nav-btns-cont {
+  flex-direction: row;
+}
+
+.nav-btns-cont div {
+  height: 25px;
+}
+
+.nav-btns {
+  font-size: 110%;
+}
+
+.nav-btns > a:nth-child(2) {
+  color: #f72210;
+}
+
+.date-weather-cont {
+  font-size: 90%;
+}
+
+.date-weather-cont > a:first-child {
+  font-size: 94%;
+  font-weight: bolder;
+}
+
+.weather-cont {
+  font-weight: 900;
+}
+
+.secendry-header {
+  padding: 0 !important;
+}
