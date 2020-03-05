@@ -3,23 +3,24 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
     <link rel="stylesheet" href="styles/styles.css">
 
     <title>NewsWeek</title>
   </head>
   <body>
-    <header class="container-fluid text-white">
-      <div class="container main-header navbar p-2 text-white">
+    <header class=" text-white">
+      <div class="custum-cont main-header navbar p-2 text-white">
     
-        <div class="date-weather-cont align-self-end navbar-brand">
-          <div id="weather-big" class="weather-cont "><p> 20° Lakhdaria, DZ ></p></div>
+        <div class="date-weather-cont ml-3 d-flex p-0 align-self-end navbar-brand">
+          <div id="weather-big" class="weather-cont "><p class="font-weight-bold"> 20° Algiers, DZ ></p></div>
           <div id="date" class="date-cont"><p> Sun, Mar 01, 2020</p></div>
         </div>
     
         <div class="logo-cont">
-          <p class="display-1 logo">Newsweek</p>
+          <p class="display-1 logo font-weight-bold m-0">Newsweek</p>
         </div>
     
     
@@ -34,45 +35,51 @@
       </div>
 
 
-      <div class="secendry-header navbar navbar-fixed-top">
-        <div class="navbar-brand d-flex align-items-center">
-          <p class="logo h3">Newsweek</p>
-          <div id="weather-small" class="weather-cont mx-3"><p class="h6 align-middle"> 20° Lakhdaria, DZ ></p></div>
+      <div class="secendry-header navbar fixed-top ">
+        <div class="navbar-brand p-0 d-flex align-items-center">
+          <p class="logo h3 m-0">Newsweek</p>
+          <div id="weather-small" class="weather-cont font-weight-bold mx-3"><p class="h6 m-0 align-middle font-weight-bold"> 20° Algiers, DZ ></p></div>
           
         </div>
         <div class="right-nav-secendary nav-btns d-flex">
           <a href="#" class="text-uppercase mx-2">sign in</a>
           <a href="#" class="text-uppercase bg-white px-2">subscribe > </a>
-          <a href="#" class="text-white"><i class="fas fa-bars"></i></a>
+          <a href="#" class="text-white"><i class="fas fa-bars ml-3"></i></a>
         </div>
       </div>
 
-      <div class="bottom-header navbar navbar-expand-lg bg-light container text-dark bg-white">
-        <ul class="navbar-nav">
-          <li class="nav-item bottom-nav-item first"><a href="/us" class="nav-link">U.S.</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/world" class="nav-link">World</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/business" class="nav-link">Business</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/tech-science" class="nav-link">Tech &amp; Science</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/culture" class="nav-link">Culture</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/newsgeek" class="nav-link">Newsgeek</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/sports" class="nav-link">Sports</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/health" class="nav-link">Health</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/the-debate" class="nav-link">The Debate</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/vantage" class="nav-link">Vantage</a></li>
-          <li class="nav-item bottom-nav-item "><a href="/weather" class="nav-link">Weather</a></li>
+      <nav class="custum-cont bottom-header navbar navbar-expand-lg bg-light text-dark bg-white">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex first"><a href="/us" class="nav-link m-auto p-0 p-0">U.S.</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/world" class="nav-link m-auto p-0">World</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/business" class="nav-link m-auto p-0">Business</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/tech-science" class="nav-link m-auto p-0">Tech &amp; Science</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/culture" class="nav-link m-auto p-0">Culture</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/newsgeek" class="nav-link m-auto p-0">Newsgeek</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/sports" class="nav-link m-auto p-0">Sports</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/health" class="nav-link m-auto p-0">Health</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/the-debate" class="nav-link m-auto p-0">The Debate</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/vantage" class="nav-link m-auto p-0">Vantage</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/weather" class="nav-link m-auto p-0">Weather</a></li>
+          <li class="nav-item search-li d-flex"><input class="unselectable " type="text" placeholder="Search" name="search" id="search-box"><label for="search"></label></li>
+          <li class="nav-item justify-content-end align-self-start last-li"><div class="red-shape"></div></li>
+          
         </ul>
-      </div>
+      </nav>
     </header>
-    <main class="container-fluid">
-      <div class="container bg-warning d-flex justify-content-end">
+
+
+    <main class="">
+      <div id="main" class="custum-cont bg-warning d-flex justify-content-end">
         <div class="flex-right">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ut.
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint, neque? Ratione natus nostrum, illo adipisci omnis sunt. Alias veritatis nam voluptate sunt praesentium, fugiat a? Aspernatur possimus repellendus repellat, facere reiciendis ipsum aliquid sunt quam fugit vel, totam rerum excepturi! Inventore quam esse, quae sequi exercitationem et laudantium quo officia quod animi? Incidunt earum nulla ea reprehenderit sed saepe culpa soluta. Officiis enim, voluptates possimus soluta veniam illo deleniti illum et voluptatibus nobis quisquam sint distinctio saepe harum debitis molestiae dolorum sapiente cupiditate quasi. Odit veritatis, hic laudantium exercitationem facere rerum praesentium officiis perspiciatis unde. Error dolorem cupiditate quaerat quas hic provident quos quae sequi numquam. Nam similique excepturi ullam facere corrupti asperiores distinctio ipsa. Architecto autem, deleniti cupiditate non corporis dolores officia dicta praesentium distinctio eum ab, a doloribus libero ea mollitia similique assumenda tempora. Maxime minus accusantium ipsa at veritatis saepe nulla, unde inventore, placeat molestias odio voluptatibus pariatur, impedit non sit a quibusdam. Odit a deserunt voluptatem sint accusantium fugiat doloribus ex id vero dolores, quia laborum laboriosam beatae illo! Pariatur obcaecati in recusandae, nihil nam debitis eveniet tempore aliquid. Quae quas voluptas commodi repellat! Nihil porro laudantium aperiam magni aut consectetur eligendi placeat adipisci debitis nam. Nemo, quod nihil eaque fuga porro ab optio nesciunt error dignissimos dolorum similique qui hic sequi voluptatibus libero? Et error praesentium voluptatum fugiat omnis earum minima, quia corrupti sapiente. Impedit id voluptatem recusandae soluta aliquid. Enim voluptatum aspernatur consequatur iure facere quidem voluptatem saepe nemo explicabo nulla quos, nihil id natus deserunt et nostrum molestiae numquam? Illum placeat iusto debitis dignissimos velit voluptatem quis ipsum odit eum esse, officiis consequuntur in ducimus praesentium cum vitae quod libero fuga! Distinctio dolor mollitia est accusantium, impedit similique facere. Veniam dolores est ipsum mollitia officiis quos ea. At quod reiciendis illum ullam molestias aperiam repudiandae iure vel, iste pariatur similique facere veniam laboriosam ea ad ipsam dolores odit accusamus sint assumenda eligendi doloribus. Enim, nemo provident illum velit veniam consectetur. Molestiae perspiciatis nemo id magni ab facilis saepe labore cupiditate aut vitae, quia qui necessitatibus consequuntur veritatis ratione quidem adipisci impedit mollitia magnam natus facere eveniet non explicabo consequatur? Impedit rem ad nihil? Dolore ipsa ipsum odit quibusdam minus non temporibus rerum eius doloribus voluptas quaerat, explicabo quae repudiandae at unde. Esse, quibusdam tempore. Rerum nesciunt sit incidunt sed, nemo explicabo minima ipsa consequuntur quibusdam sint, illum distinctio amet nisi omnis quas laboriosam. Tempore nulla a dolor neque eum nisi esse debitis. Eaque voluptatum accusamus praesentium similique voluptatem cumque numquam temporibus quidem, molestias deserunt eum omnis tempore id incidunt quae quis exercitationem, quod nesciunt blanditiis. Amet architecto officiis eum, enim neque sed veniam obcaecati tempora, praesentium labore quam corrupti tempore et accusantium ex ab totam magni repellat officia culpa. Ducimus, voluptatem officia quo maiores alias iste soluta placeat inventore eum impedit amet vitae excepturi consequuntur repellendus quam temporibus repudiandae maxime nulla eos? Unde, nulla illum eos vel neque et! Vero eligendi, et quos accusamus, quaerat aspernatur eos nemo veniam commodi officia cupiditate labore sed illum ullam autem nihil quas repellat magnam esse? Fuga enim voluptates beatae, perspiciatis sint dolorem magni cum impedit labore animi provident explicabo, dignissimos similique esse dolorum eaque blanditiis velit! Nobis dignissimos minus magnam autem quo eveniet nostrum nesciunt doloribus. Tempore fugiat numquam consequuntur labore necessitatibus at odio, ut voluptate accusantium qui sunt obcaecati, commodi quas nostrum nihil libero architecto ex ipsa ipsum illo modi possimus fugit? Unde beatae corrupti reprehenderit velit, delectus, suscipit, cumque iure sunt fugiat exercitationem vitae! Autem placeat, sequi corrupti laudantium unde quam magni quo. Natus tenetur amet, eaque ipsa magnam voluptatibus necessitatibus pariatur ex expedita cupiditate, corrupti nesciunt temporibus repudiandae, corporis voluptas aliquid. Aperiam asperiores quibusdam ullam ipsum, sit dolore quis itaque eum! Dolores, quo? Ratione, suscipit? Dolores quasi similique deleniti dolorem impedit quidem repudiandae deserunt ab autem voluptatem in nobis animi dolor cupiditate fugiat laborum dolore distinctio placeat, tempore magni corrupti delectus? Repellat amet dicta animi, quaerat totam tempora. Iure molestiae in rerum, praesentium architecto, laboriosam, assumenda quae deserunt fugiat velit itaque dolores hic quasi. Magnam libero nulla atque officiis inventore facilis vero mollitia distinctio voluptates totam optio, perferendis iste blanditiis voluptas. Aspernatur iusto deserunt ratione sapiente reiciendis illo molestias consectetur laudantium consequuntur in iure neque alias ex voluptatem dicta sint debitis blanditiis velit tempora laborum eum dolore, saepe rem harum! Suscipit omnis illo nulla culpa laborum debitis optio? Tenetur nostrum, reprehenderit odit iusto vero optio repellendus hic. Beatae optio hic voluptatum laboriosam recusandae, unde assumenda at. Obcaecati sint, nam, amet odit tenetur repudiandae sequi cumque aspernatur molestiae iusto sed ut maxime illo, esse a harum reiciendis quaerat cum pariatur neque ullam rem nulla! Odio impedit debitis consequuntur quo quibusdam! A repudiandae eius ut doloribus ad nulla, tempora voluptates saepe numquam esse dignissimos tenetur rem necessitatibus officia ipsa eligendi nihil cum minima quam iste. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Et voluptas reiciendis totam iusto, sint asperiores saepe corrupti dolore! Numquam doloribus quisquam architecto alias perferendis, dolores minus suscipit voluptatibus, totam harum corporis vitae doloremque assumenda, beatae quae repudiandae aperiam voluptas voluptatum delectus deserunt? Quidem, esse quibusdam dolores atque fugiat minima voluptas, natus id eveniet consectetur delectus mollitia officiis, soluta tenetur cum. Inventore saepe numquam quos laboriosam illo, odio praesentium possimus in neque, unde doloribus consectetur commodi temporibus. Molestiae mollitia distinctio, odio nobis aspernatur deserunt veniam. Laboriosam a quidem voluptas eveniet velit, ipsa necessitatibus! Natus soluta dolorum molestias quae doloremque asperiores recusandae obcaecati exercitationem, facere ad officiis maxime? Possimus quo saepe, accusamus eius nisi repellat aut eaque tenetur ab velit accusantium repellendus quia iusto officiis, nemo dicta provident repudiandae sunt mollitia a, fugit praesentium quis. Nulla ea impedit est? Harum consequuntur voluptatem nihil. Provident odit laborum recusandae itaque, eum vitae ad odio mollitia fuga impedit! Obcaecati ad totam quaerat veritatis, architecto, possimus ea voluptate dolorum officiis quod dolor suscipit reprehenderit eveniet maxime facilis dicta repellendus itaque! Ducimus natus minus mollitia veniam qui corrupti libero porro quod assumenda atque ipsa sunt ratione laboriosam, doloremque, voluptatibus exercitationem. In laborum modi facilis cum quo, debitis nam sapiente nesciunt maiores fuga ab itaque molestias quibusdam sint vitae. Earum quidem, rerum quos aspernatur ducimus pariatur, ullam enim sequi aut ipsam quas vitae laborum modi possimus incidunt. Est obcaecati vero dicta! Voluptatibus molestiae velit assumenda corrupti perferendis fuga dolores aspernatur rem. Ipsa ut nisi aspernatur! Inventore eum, sequi velit at voluptas nisi cumque aspernatur. Iure, ullam! Obcaecati nesciunt id aliquid iusto tempore nobis fuga quas dicta soluta officia placeat quaerat eum exercitationem perspiciatis cupiditate vitae, minus pariatur cum consectetur sunt ad voluptatem odit? Dicta non similique dolore dolorem vero autem architecto consectetur qui quas velit ipsum labore saepe distinctio ad reiciendis, optio delectus est officia cumque earum. Nostrum itaque commodi, debitis doloremque quidem fugit error illum quaerat reiciendis! Eaque, minima animi asperiores illum hic culpa quisquam veritatis ipsam placeat quasi nisi officiis sapiente mollitia, nihil vero! Iure, nam sint officiis ipsum nesciunt amet sunt expedita ab. Sunt, quis sequi. Perferendis dignissimos soluta fugiat, maiores dolores culpa sunt ullam officiis ducimus nulla tempore voluptatibus illo quia sit molestiae laudantium totam maxime veniam nisi nobis architecto consequuntur deserunt! Doloribus nesciunt repellat quidem, corporis, cum amet vitae praesentium in consectetur aperiam omnis veritatis? Dolores rem laboriosam exercitationem soluta error expedita. Animi fugit minus, vel doloribus consequuntur libero et excepturi! Perferendis autem, ullam facilis dolor quae vel consectetur velit voluptate accusamus aperiam laborum officia quaerat sint optio dolorem tempore, inventore voluptatem dicta quisquam modi a quod. Repudiandae incidunt impedit nemo quidem facilis ipsum ex ipsam sunt ab fugiat laborum adipisci voluptates temporibus, omnis quis excepturi ad minima fuga deleniti rerum sit sapiente laboriosam earum cum? Accusantium ex nulla natus quo accusamus animi, dolor sit culpa minus incidunt, aperiam perspiciatis. Iure in consequuntur aliquam provident, tenetur rem nesciunt deleniti, maxime fugit maiores facilis doloribus quaerat autem libero laborum excepturi quo quos corrupti culpa. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus, ut.
         </div>
       </div>
     </main>
 
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="scripts/app.js"></script>
