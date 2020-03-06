@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed|Rokkitt:700&display=swap');
 
 body {
-  background-color: lightgray;
+  background-color: #f4f5f6;
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
 }
 
@@ -105,11 +105,13 @@ header > div {
   width: 80px;
   border: 0;
   flex: 1;
+
 }
 
 .search-li input:focus {
   width: 100%;
   outline-width: 0;
+
 }
 
 .last-li {
