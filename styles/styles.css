@@ -5,8 +5,6 @@ body {
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
 }
 
-
-
 a {
   color: inherit;
   text-decoration: none;
@@ -50,7 +48,6 @@ header > div {
 .container {
   width: 1200px;
 }
-
 
 .secendry-header {
   display: none;
@@ -107,13 +104,11 @@ header > div {
   width: 80px;
   border: 0;
   flex: 1;
-
 }
 
 .search-li input:focus {
   width: 100%;
   outline-width: 0;
-
 }
 
 .last-li {
@@ -175,4 +170,34 @@ h5 {
   color: red;
   opacity: .7;
   padding: 3px 13px;
+}
+
+.sec-title {
+  font-size: 19px;
+}
+
+.mag-cat {
+  background-color: #f72210;
+  color: #fff;
+}
+
+.cat {
+  color: #f72210;
+}
+
+.def-font {
+  font-size: 19px;
+}
+
+.grid-wraper img {
+  width: 100%;
+}
+
+.mag-tag-box {
+  bottom: 0;
+}
+
+.lable-featured {
+  bottom: 0;
+  left: 0;
 }
