@@ -5,6 +5,8 @@ body {
   font-family: "Roboto Condensed", Arial, Helvetica, sans-serif;
 }
 
+
+
 a {
   color: inherit;
   text-decoration: none;
@@ -20,7 +22,7 @@ p {
 }
 
 .custum-cont {
-  max-width: 1310px;
+  max-width: 1315px;
   margin: auto;
 }
 
@@ -142,4 +144,35 @@ header > div {
   main {
     padding-top: 50px;
   }
+}
+
+h5 {
+  font-size: 99%;
+}
+
+.newsletter-box {
+  max-width: 100%;
+  width: 346px;
+  margin: 25px auto;
+}
+
+.newsletter-box > div > h4,
+.newsletter-box > div > p {
+  font-weight: ;
+}
+
+.signup-header {
+  font-size: 19px;
+}
+
+.title-section-main {
+  font-size: 18px;
+  color: lightgray;
+}
+
+.cat-tag {
+  bottom: 0;
+  color: red;
+  opacity: .7;
+  padding: 3px 13px;
 }

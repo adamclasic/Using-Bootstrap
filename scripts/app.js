@@ -60,7 +60,7 @@ $(document).ready(function () {
         // var today = new Date();
         // const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
 
-        // var weatherData = temperature + '° <span class="location">' + cityName + ', ' + countryCode + '</span>';
+        // var weatherData = temperature + '° <span class="d-none d-sm-inline">' + cityName + ', ' + countryCode + '</span>';
         // var dateData = today.toLocaleDateString('us-EN', options);
         
         // $('.weather-data').html(weatherData);
