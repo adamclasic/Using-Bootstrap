@@ -31,7 +31,7 @@ $(document).ready(function () {
     var temperature = '';
 
     $.ajax({
-        url:"https://crossorigin.me/http://api.openweathermap.org/data/2.5/weather?q=" + ipInfo.region + "&appid=98f5c39a38b987172eb484d62acb0f9c",
+        url:"https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=" + ipInfo.region + "&appid=98f5c39a38b987172eb484d62acb0f9c",
         cach: false,
         async: false,
         success: function(data) {
@@ -39,6 +39,10 @@ $(document).ready(function () {
             console.log(data);
         }
     });
+
+    if (temperature === '') {
+        temperature = '22'
+    }
 
     // //
 
