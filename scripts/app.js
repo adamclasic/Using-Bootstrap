@@ -1,48 +1,46 @@
 $(document).ready(function () {
 
-    var ip = '';
-    $.ajax({
-        url: "https://api.ipify.org/?format=json",
-        cache: false,
-        async: false,
-        success: function(data) {
-            console.log(data)
-            ip = data.ip;
+    // var ip = '';
+    // $.ajax({
+    //     url: "https://api.ipify.org/?format=json",
+    //     cache: false,
+    //     async: false,
+    //     success: function(data) {
+    //         console.log(data)
+    //         ip = data.ip;
 
-        }
-    });
+    //     }
+    // });
 
-    var ipInfo = '';
-    var countryCode = '';
-    var cityName = '';
+    // var ipInfo = '';
+    // var countryCode = '';
+    // var cityName = '';
 
-    $.ajax({
-        url:"https://ipapi.co/" + ip + "/json/",
-        cashe: false,
-        async: false,
-        success: function(data) {
-            ipInfo = data;
-            countryCode = data.country_code;
-            cityName = data.region;
-            console.log(data);
-        }
-    });
+    // $.ajax({
+    //     url:"https://ipapi.co/" + ip + "/json/",
+    //     cashe: false,
+    //     async: false,
+    //     success: function(data) {
+    //         ipInfo = data;
+    //         countryCode = data.country_code;
+    //         cityName = data.region;
+    //         console.log(data);
+    //     }
+    // });
 
-    var temperature = '';
+    // var temperature = '';
 
-    $.ajax({
-        url:"https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=" + ipInfo.region + "&appid=98f5c39a38b987172eb484d62acb0f9c",
-        cach: false,
-        async: false,
-        success: function(data) {
-            temperature = data.main.temp - 273.15;
-            console.log(data);
-        }
-    });
+    // $.ajax({
+    //     url:"https://cors-anywhere.herokuapp.com/http://api.openweathermap.org/data/2.5/weather?q=" + ipInfo.region + "&appid=98f5c39a38b987172eb484d62acb0f9c&units=metric",
+    //     cach: false,
+    //     async: false,
+    //     success: function(data) {
+    //         temperature = data.main.temp;
+    //         console.log(data);
+    //     }
+    // });
 
-    if (temperature === '') {
-        temperature = '22'
-    }
+    
 
     // //
 
@@ -63,16 +61,20 @@ $(document).ready(function () {
             $('.secendry-header').toggleClass('d-flex', $(this).scrollTop() > 100);
         })
 
+        if (temperature === '') {
+            temperature = '22'
+        }
+
         // //
         
-        var today = new Date();
-        const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
+        // var today = new Date();
+        // const options = { weekday: 'short', year: 'numeric', month: 'short', day: 'numeric' };
 
-        var weatherData = temperature + '° <span class="d-none d-sm-inline">' + cityName + ', ' + countryCode + '</span>';
-        var dateData = today.toLocaleDateString('us-EN', options);
+        // var weatherData = temperature + '° <span class="d-none d-sm-inline">' + cityName + ', ' + countryCode + '</span>';
+        // var dateData = today.toLocaleDateString('us-EN', options);
         
-        $('.weather-data').html(weatherData);
-        $('.date-data').text(dateData);
+        // $('.weather-data').html(weatherData);
+        // $('.date-data').text(dateData);
 
     
     })

@@ -201,3 +201,47 @@ h5 {
   bottom: 0;
   left: 0;
 }
+
+.block-title {
+  color: #f72210;
+  font-size: 22px;
+}
+
+.img {
+  width: 95px!important;
+}
+
+.subs-title {
+  color: #f72210;
+  font-size: 16px;
+}
+
+.mag-img-cont,
+.helper  {
+  width: 260px;
+  height: 241px;
+}
+
+.mag-img-cont > img:last-child {
+  bottom: 0;
+  right: 0;
+
+}
+
+.mag-img-cont > img:first-child {
+  top: 0;
+  left: 0;
+}
+
+.bg-red {
+  background-color: #f72210;
+}
+
+.color-red {
+  color: #f72210;
+}
+
+.custom-py-4-5 {
+  padding-top: 36px;
+  padding-bottom: 36px;
+}
