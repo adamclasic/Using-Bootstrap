@@ -18,13 +18,12 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
-![Hireable](/pics/readme/yes.svg)
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
   <a href="https://github.com/adamclasic/Using-Bootstrap">
-    <img src="/pics/readme/microverse.png" alt="Logo" width="80" height="80">
+    <img src="https://i.dlpng.com/static/png/4034060-newsweek-logo-png-transparent-svg-vector-freebie-supply-newsweek-png-800_600_preview.webp" alt="Logo" width="80" height="80">
   </a>
 
   <h3 align="center">Using Bootstrap</h3>
@@ -55,7 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](images/screenshot.png)
+![product-screenshot](images/screenshot.png)
 
 ![screenshot](images/screenshot-md.png)
 
