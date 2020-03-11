@@ -19,16 +19,12 @@ p {
   margin: 0;
 }
 
-.custum-cont {
+.custom-cont {
   max-width: 1315px;
   margin: auto;
 }
 
 /* header */
-
-header > div {
-  background-color: #f72210;
-}
 
 .bottom-nav-item {
   flex-grow: 1;
@@ -50,7 +46,6 @@ header > div {
 }
 
 .secendry-header {
-  display: none;
   padding: 13px;
   height: 50px;
 }
@@ -124,23 +119,6 @@ header > div {
   right: 0;
 }
 
-/* Media queries  */
-
-@media only screen and (max-width: 992px) {
-  .bottom-header,
-  .main-header {
-    display: none;
-  }
-
-  .secendry-header {
-    display: flex;
-  }
-
-  main {
-    padding-top: 50px;
-  }
-}
-
 h5 {
   font-size: 99%;
 }
@@ -149,11 +127,6 @@ h5 {
   max-width: 100%;
   width: 346px;
   margin: 25px auto;
-}
-
-.newsletter-box > div > h4,
-.newsletter-box > div > p {
-  font-weight: ;
 }
 
 .signup-header {
@@ -168,21 +141,8 @@ h5 {
 .cat-tag {
   bottom: 0;
   color: red;
-  opacity: .7;
   padding: 3px 13px;
-}
-
-.sec-title {
-  font-size: 19px;
-}
-
-.mag-cat {
-  background-color: #f72210;
-  color: #fff;
-}
-
-.cat {
-  color: #f72210;
+  opacity: 0.7;
 }
 
 .def-font {
@@ -202,22 +162,7 @@ h5 {
   left: 0;
 }
 
-.block-title {
-  color: #f72210;
-  font-size: 22px;
-}
-
-.img {
-  width: 95px!important;
-}
-
-.subs-title {
-  color: #f72210;
-  font-size: 16px;
-}
-
-.mag-img-cont,
-.helper  {
+.mag-img-cont {
   width: 260px;
   height: 241px;
 }
@@ -225,7 +170,6 @@ h5 {
 .mag-img-cont > img:last-child {
   bottom: 0;
   right: 0;
-
 }
 
 .mag-img-cont > img:first-child {
@@ -233,15 +177,59 @@ h5 {
   left: 0;
 }
 
+.sign-block-img {
+  background: url(https://d.newsweek.com/en/full/1541302/starting5-homepage.png?w=397&amp;h=265&amp;q=90&amp;f=742bce9a6f72dd8f19ba2e7fd5db06e5&quot;) center center / cover no-repeat;
+  min-width: 200px;
+  height: 311px;
+}
+
+/* custom colors */
+
 .bg-red {
   background-color: #f72210;
 }
 
-.color-red {
+.text-red {
   color: #f72210;
+}
+
+.text-grey {
+  color: #666;
 }
 
 .custom-py-4-5 {
   padding-top: 36px;
   padding-bottom: 36px;
+}
+
+/* font sizes  */
+
+.footer-logo {
+  font-size: 55px;
+}
+
+.social {
+  font-size: 27px;
+}
+
+.block-title {
+  font-size: 22px;
+}
+
+.subs-title {
+  font-size: 16px;
+}
+
+.lower-footer ul li {
+  border-right: 1px solid #666;
+  line-height: 1;
+  font-size: 96%;
+}
+
+/* Media queries  */
+
+@media only screen and (max-width: 767px) {
+  .lower-footer ul li {
+    border-right: 0;
+  }
 }
