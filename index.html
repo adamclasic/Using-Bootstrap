@@ -1,0 +1,1383 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <title>NewsWeek</title>
+  </head>
+  <body>
+    <header class=" text-white">
+      <div class="custom-cont main-header d-none d-lg-flex navbar p-2 text-white bg-red">
+    
+        <div class="date-weather-cont ml-3 d-flex p-0 align-self-end navbar-brand">
+          <div id="weather-big" class="weather-cont "><p class="font-weight-bold weather-data"> 20° Algiers, DZ > </p></div>
+          <div id="date" class="date-cont"><p class="date-data"> Sun, Mar 01, 2020</p></div>
+        </div>
+    
+        <div class="logo-cont">
+          <p class="display-1 logo font-weight-bold m-0">Newsweek</p>
+        </div>
+    
+    
+        <div class="nav-btns-cont align-self-end">
+          <div></div>
+          <div class="nav-btns d-flex">
+            <a href="#" class="text-uppercase mx-2">sign in</a>
+            <a href="#" class="text-uppercase text-red bg-white px-2">subscribe > </a>
+          </div>
+        </div>
+
+      </div>
+
+
+      <div class="secendry-header d-lg-none d-flex navbar fixed-top bg-red">
+        <div class="navbar-brand p-0 d-flex align-items-center">
+          <p class="logo h3 m-0">Newsweek</p>
+          <div id="weather-small" class="weather-cont font-weight-bold mx-3"><p class="h6 m-0 align-middle font-weight-bold weather-data"> 20° <span class="d-none d-sm-inline"> Algiers, DZ > </span></p></div>
+          
+        </div>
+        <div class="right-nav-secendary nav-btns d-flex">
+          <a href="#" class="text-uppercase mx-2">sign in</a>
+          <a href="#" class="text-uppercase text-red bg-white px-2">subscribe > </a>
+          <a href="#" class="text-white"><i class="fas fa-bars ml-3"></i></a>
+        </div>
+      </div>
+
+      <nav class="custom-cont bottom-header d-none d-lg-block navbar navbar-expand-lg bg-light text-dark bg-white">
+        <ul class="navbar-nav w-100">
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex first"><a href="/us" class="nav-link m-auto p-0 p-0">U.S.</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/world" class="nav-link m-auto p-0">World</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/business" class="nav-link m-auto p-0">Business</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/tech-science" class="nav-link m-auto p-0">Tech &amp; Science</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/culture" class="nav-link m-auto p-0">Culture</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/newsgeek" class="nav-link m-auto p-0">Newsgeek</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/sports" class="nav-link m-auto p-0">Sports</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/health" class="nav-link m-auto p-0">Health</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/the-debate" class="nav-link m-auto p-0">The Debate</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/vantage" class="nav-link m-auto p-0">Vantage</a></li>
+          <li class="nav-item bottom-nav-item font-weight-bold d-flex"><a href="/weather" class="nav-link m-auto p-0">Weather</a></li>
+          <li class="nav-item search-li d-flex"><input class="unselectable "  type="text" placeholder="Search" name="search" id="search-box"><label for="search-box"></label></li>
+          <li class="nav-item justify-content-end align-self-start last-li"><div class="red-shape"></div></li>
+          
+        </ul>
+      </nav>
+    </header>
+
+
+    <main class="custom-cont pb-5 pt-5 pt-lg-0 bg-white my-1">
+      
+        <div id="main" class="container-fluid main-div row mx-0">
+          <div class="order-lg-1 order-md-1 order-sm-2 main-sec col-lg-3 col-md-5">
+            
+            <div class="sticky-top h-auto">
+              <h4 class="text-secondary text-uppercase font-weight-bold title-section-main mt-2">Featured Stories</h4>
+              <div class="featured-stories-container mt-2">
+                <div class="festured-cards mb-5">
+                  <div class="card mb-2 ">
+                    <a href="#">
+                      <img class="card-img-top" src="https://placeimg.com/342/228/tech" alt="coronavirus-cases-deaths-countries-china"></a>
+                    <div class="cat-tag position-absolute bg-white text-center font-weight-bold">HEALTH</div>
+                  </div>
+                  <div class="card-body p-0">
+                    <h3 class="card-title"><a class="text-decoration-none font-weight-bold h4" href="#">Coronavirus Study Claiming 2019-nCoV Can Spread Before Symptoms 'Flawed'</a></h3>
+                    <p class="card-text">Report was based on a case where a German man caught the virus from his supposedly symptomless colleague.</p>
+                  </div>
+                </div>
+                <div class="festured-cards mb-5">
+                  <div class="card mb-2">
+                    <a href="#"><img class="card-img-top" src="https://placeimg.com/342/228/nature" alt="warren-steyer-sanders"></a>
+                    <div class="cat-tag position-absolute bg-white text-center font-weight-bold">POLITICS</div>
+                  </div>
+                  <div class="card-body p-0">
+                    <h3 class="card-title"><a class="text-decoration-none font-weight-bold h4" href="#">#ImWithFred Trends After a Grieving Father Was Removed From the SOTU</a></h3>
+                    <p class="card-text">Fred Guttenberg was escorted out of the State of Union Address on Tuesday night after shouting "What about my daughter!" in response to Donald Trump's comments about Second Amendment rights.</p>
+                  </div>
+                </div>
+                <div class="festured-cards mb-5">
+                  <div class="card mb-2">
+                    <a href="#"><img class="card-img-top" src="https://placeimg.com/342/228/peopole" alt="crash plain"></a>
+                    <div class="cat-tag position-absolute bg-white text-center font-weight-bold">NEWS</div>
+                  </div>
+                  <div class="card-body p-0">
+                    <h3 class="card-title"><a class="text-decoration-none font-weight-bold h4" href="#">Pete Buttgieg Claims Iowa Victory for Second Time After Partial Results</a></h3>
+                    <p class="card-text">Former South Bend, Indiana Mayor Pete Buttigieg claimed early victory in the Iowa caucus for a second time, after early results showed him in the lead with Sen. Bernie Sanders.</p>
+                  </div>
+                </div>
+                <div class="festured-cards mb-5">
+                  <div class="card mb-2">
+                    <a href="#"><img class="card-img-top" src="https://placeimg.com/342/228/any" alt="img"></a>
+                    <div class="cat-tag position-absolute bg-white text-center font-weight-bold">WORLD</div>
+                  </div>
+                  <div class="card-body p-0">
+                    <h3 class="card-title"><a class="text-decoration-none font-weight-bold h4" href="#">Major Earthquake Hits Cuba and Jamaica, Causing Multiple Sinkholes to Open up in Cayman Islands</a></h3>
+                    <p class="card-text">An earthquake has struck in the Caribbean Sea to the south of Cuba and northwest of Jamaica, causing weak tremors in Florida and sinkholes in the Cayman Islands.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          
+          
+          <div class="order-lg-2 order-md-2 order-first col-lg-5 col-md-7 col-sm-12">
+
+            <div class="  mb-5">
+              <section class="story-culture-more">
+                <h4 class="text-secondary text-uppercase font-weight-bold title-section-main mt-2">Top Stories</h4>
+                <div class="top-stories mt-2">
+                  <div class="festured-cards top-stories mb-5 ">
+                    <div class="card mb-2">
+                      <a href="#"><img class="card-img-top" src="https://placeimg.com/506/311/any" alt="img"></a>
+                      <div class="cat-tag position-absolute bg-white text-center font-weight-bold">POLITICS</div>
+                    </div>
+                    <div class="card-body p-0">
+                      <h3 class="card-title"><a class="text-decoration-none top-heading-3 font-weight-bold h4" href="#">GOP Chants 'Four More Years' at SOTU Address, Dems Brand it a Trump Rally</a></h3>
+                      <p class="card-text">President Donald Trump delivered his annual address to Congress on the eve of his likely acquittal by the Senate in his impeachment trial.</p>
+                    </div>
+                  </div>
+  
+                  <div class="-more flex-column-reverse flex-md-column d-none d-md-flex ">
+                    <section class="container-fluid p-0 bg-light">
+                      <h4 class="ml-3 mt-3 text-secondary text-uppercase font-weight-bold title-section-main mt-2">Culture &amp; Travel</h4>
+  
+                      <div class="row mt-3">
+                        <div class=" col-lg-6 col-md-6 mb-4">
+                          <div class="card mb-2">
+                            <a href="#"><img class="card-img-top" src="https://placeimg.com/240/160/any" alt="koffee-reggae-singer"></a>
+                          </div>
+                          <div class="card-body pl-3 pr-2 p-0">
+                            <h3 class="card-title"><a class="text-decoration-none font-weight-normal h5" href="#">Rising Teen Star Koffee Gives Reggae a Jolt to the Mainstream</a></h3>
+                            <p class="card-text text-secondary">Though Jamaican artists have been pigeon-holed or marginalized, they're finally taking off stateside. Meet Koffee, the first female artist to take home the Grammy for best reggae album—at 19 years old.</p>
+                            <span class="etiquette "><a class="text-decoration-none" href="#">Music</a></span>
+                          </div>
+                        </div>
+                        <div class=" culture col-lg-6 col-md-6 mb-4">
+                          <div class="card mb-2">
+                            <a href="#"><img class="card-img-top" src="https://placeimg.com/240/160/nature" alt="cul-extremevacations-banner"></a>
+                          </div>
+                          <div class="card-body pl-3 pr-2 p-0">
+                            <h3 class="card-title"><a class="text-decoration-none font-weight-normal h5" href="#">High-Stakes Holidays That Cater to Thrill Seekers</a></h3>
+                            <p class="card-text text-secondary">Looking to up the ante on your next adventure? Here are some extreme vacations that will stimulate thrill seekers cerebral and physical predilections for danger, risk and fantasy.</p>
+                            <span class="etiquette"><a class="text-decoration-none" href="#">Travel</a></span>
+                          </div>
+                        </div>
+                        <div class=" col-lg-6 col-md-6 mb-4">
+                          <div class="card mb-2">
+                            <a href="#"><img class="text-decoration-none card-img-top" src="https://placeimg.com/240/160/peopole" alt="face-masks-arrival-asia"></a>
+                          </div>
+                          <div class="card-body pl-3 pr-2 p-0">
+                            <h3 class="card-title"><a class="text-decoration-none font-weight-normal h5" href="#">What Travelers Should Know about the Coronavirus</a></h3>
+                            <p class="card-text text-secondary">If you are thinking about canceling a trip, or planning on continuing a trip to a country affected by the coronavirus, here's everything you need to know.</p>
+                            <span class="etiquette"><a class="text-decoration-none" href="#">Travel</a></span>
+                          </div>
+                        </div>
+                        <div class="-cards culture col-lg-6 col-md-6 mb-4">
+                          <div class="card mb-2">
+                            <a href="#"><img class="card-img-top" src="https://placeimg.com/240/160/sepia" alt="hotel-room-bed"></a>
+                          </div>
+                          <div class="card-body pl-3 pr-2 p-0">
+                            <h3 class="card-title"><a class="text-decoration-none font-weight-normal h5" href="#">How to Hack Your Hotel Room to Get the Best Night's Sleep</a></h3>
+                            <p class="card-text text-secondary">Curtains that won't shut? Noisy hallway? The Benjamin Hotel's sleep expert shares the secrets of how to sleep better when you're away from home.</p>
+                            <span class="etiquette"><a class="text-decoration-none" href="#">Travel</a></span>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+  
+  
+                    <section class="-stories mt-2">
+                      <h4 class="text-secondary text-uppercase font-weight-bold title-section-main mt-2">More Stories</h4>
+                      <div class="more-stories-container row ml-0 pl-0 m-0 mt-3 pt-4 border-top">
+                        <div class=" border-bottom col-12 p-0 pb-2">
+                          <div>
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/any" alt="democrats-likely-subpoena-john-bolton"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">Bolton Will Likely Be Subpoenaed by House to Testify, Jerry Nadler Says</a></h4>
+                            <p class="m-0">"When you have a lawless president, you have to bring that to the fore and you have to spotlight that," the House Judiciary Committee chairman said.</p>
+                          </div>
+                        </div>
+                        <div class=" border-bottom col-12 p-0 pb-2 mt-4">
+                          <div>
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/sepia" alt="war-terror-iraq-us-troops"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">U.S. Taxpayers Each Spent More Than $8,000 on Iraq War</a></h4>
+                            <p class="m-0">The current cost to the federal government for operations in Iraq is an estimated $1.922 billion, including interest and additions to the base budget.</p>
+                          </div>
+                        </div>
+                        <div class=" border-bottom col-12 p-0 pb-2">
+                          <div class="mt-4">
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/peopole" alt="trump"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">Trump Accused of Lying About Protecting Those With Pre-Existing Conditions</a></h4>
+                            <p class="m-0">The president has wanted to repeal the Affordable Care Act ever since he entered the White House three years ago.</p>
+                          </div>
+                        </div>
+                        <div class=" border-bottom col-12 p-0 pb-2">
+                          <div class="mt-4">
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/any" alt="us-military-europe-defender-exercise"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">Russia Says It 'Will React' to Massive U.S. Military Move on Its Border</a></h4>
+                            <p class="m-0">Defender-Europe 20 is the largest U.S. deployment to Europe in more than 25 years, but NATO Secretary-General Jens Stoltenberg insists that it "is not directed against any particular country."</p>
+                          </div>
+                        </div>
+                        <div class=" border-bottom col-12 p-0 pb-2">
+                          <div class="mt-4">
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/nature" alt="img"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">Former Marine Walks Out of Trump's State of the Union Address</a></h4>
+                            <p class="m-0">Representative Seth Moulton said he walked out of President Donald Trump's address when the president began talking about his support for the U.S. military.</p>
+                          </div>
+                        </div>
+                        <div class=" border-bottom col-12 p-0 pb-2">
+                          <div class="mt-4">
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/tech" alt="diamond-princess-cruise-ship-coronavirus-february-2020"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">American Among Those Testing Positive for Coronavirus on Quarantined Cruise</a></h4>
+                            <p class="m-0">The ship will remain in quarantine for at least another two weeks, as required by the Japanese government.</p>
+                          </div>
+                        </div>
+                        <div class=" border-bottom more col-12 p-0 pb-4">
+                          <div class="mt-4">
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/any" alt="plastic-bottles"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">Chemical Recycling Could Transform Plastic Recycling</a></h4>
+                            <p class="m-0">A new form of chemical recycling could help transform plastic recycling, allowing "carbon to be recycled indefinitely," say researchers.</p>
+                          </div>
+                        </div>
+                        <div class=" border-bottom col-12 p-0 pb-2">
+                          <div class="mt-4">
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/peopole" alt="coronavirus"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">Asian Woman Allegedly Attacked in New York for Wearing Protective Mask</a></h4>
+                            <p class="m-0">The victim was allegedly attacked by a man at Grand Street station in an assault potentially linked to fear of the coronavirus.</p>
+                          </div>
+                        </div>
+                        <div class=" border-bottom col-12 p-0 pb-2">
+                          <div class="mt-4">
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/animals" alt="jay-z-beyonce"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">Jay-Z And Beyoncé Sitting During National Anthem Not Premeditated</a></h4>
+                            <p class="m-0">Jay-Z explained to a class on Monday that he did not sit during the national anthem at the Super Bowl as an act of silent protest, because he wouldn't put Blue Ivy through that.</p>
+                          </div>
+                        </div>
+                        <div class=" border-bottom col-12 p-0 pb-2">
+                          <div class="mt-4">
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/any" alt="school"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6" href="#">Father Describes Bullying Son Faced, Asked Why He Didn't 'Stay in Mexico'</a></h4>
+                            <p class="m-0">Adrian Iraola had been describing how his son had cried himself to sleep at night over the bullying he faced.</p>
+                          </div>
+                        </div>
+                        <div class=" col-12 p-0 pb-4">
+                          <div class="mt-4">
+                            <a href="#"><img class="float-left mr-4" src="https://placeimg.com/95/95/grayscale" alt="innoko-national-wildlife-refuge-alaska"></a>
+                            <h4><a class="text-decoration-none font-weight-bold h6"  href="#">Rapid Permafrost Thaw in Arctic Is Causing Land to 'Swallow Snowmobiles'</a></h4>
+                            <p class="m-0">Permafrost is ground that remains frozen for a period of two or more years.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </div>
+              </section>
+            </div>
+
+          </div>
+    
+
+
+
+
+
+
+          <aside class="order-lg-3 order-md-3 order-sm-3 col-lg-4 col-md-12">
+            <div class="sticky-top">
+            
+              <section class="">
+                <h4 class="text-secondary text-uppercase font-weight-bold title-section-main mt-2">Opinion</h4>
+                <div class="opinion-container row ml-0 pl-0 no-gutters">
+                  <div class="opinion-cards opinion thumbnail col-12 border-bottom mt-2">
+                    <div class="row ml-0 pl-0 mb-3">
+                      <div class="card border-0">
+                        <a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/83499/newt-gingrich.png?w=63&h=63&l=48&t=55&f=d8b4f8dfaad8a5f0f71bffcc6c0d6a77" alt="mark-joseph"></a>
+                      </div>
+                      <div class=" col-8 col-xs-6">
+                        <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">Capitalism Is in Trouble, and It's Up to Us to Save It</a></h5>
+                        <span class="card-text text-secondary font-weight-bold">BY MARK JOSEPH</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opinion-cards opinion thumbnail col-12 border-bottom mt-3">
+                    <div class="row ml-0 pl-0 mb-3">
+                      <div class="card border-0">
+                        <a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/83499/newt-gingrich.png?w=63&h=63&l=48&t=55&f=d8b4f8dfaad8a5f0f71bffcc6c0d6a77" alt="sandy-orth"></a>
+                      </div>
+                      <div class=" col-8 col-xs-6">
+                        <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">I'm an Iowa Evangelical Republican—and I Won't Vote for Trump Again</a></h5>
+                        <span class="card-text text-secondary font-weight-bold">BY SANDY ORTH</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opinion-cards opinion thumbnail col-12 border-bottom mt-3">
+                    <div class="row ml-0 pl-0 mb-3">
+                      <div class="card border-0">
+                        <a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/83499/newt-gingrich.png?w=63&h=63&l=48&t=55&f=d8b4f8dfaad8a5f0f71bffcc6c0d6a77" alt="sam-hill"></a>
+                      </div>
+                      <div class=" col-8 col-xs-6">
+                        <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">Trump's Travel Ban on Nigeria Will Hurt Both Countries</a></h5>
+                        <span class="card-text text-secondary font-weight-bold">BY SAM HILL</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opinion-cards opinion thumbnail col-12 border-bottom mt-3">
+                    <div class="row ml-0 pl-0 mb-3">
+                      <div class="card border-0">
+                        <a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/83499/newt-gingrich.png?w=63&h=63&l=48&t=55&f=d8b4f8dfaad8a5f0f71bffcc6c0d6a77" alt="paul-gordon"></a>
+                      </div>
+                      <div class=" col-8 col-xs-6">
+                        <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">Dershowitz Is Opening a Door to the Unthinkable</a></h5>
+                        <span class="card-text text-secondary font-weight-bold">BY PAUL GORDON</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opinion-cards opinion thumbnail col-12 border-bottom mt-3">
+                    <div class="row ml-0 pl-0 mb-3">
+                      <div class="card border-0">
+                        <a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/83499/newt-gingrich.png?w=63&h=63&l=48&t=55&f=d8b4f8dfaad8a5f0f71bffcc6c0d6a77" alt="alida-garcia"></a>
+                      </div>
+                      <div class=" col-8 col-xs-6">
+                        <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">ICE Says It Will Deport Dreamers. Will the Supreme Court Let It?</a></h5>
+                        <span class="card-text text-secondary font-weight-bold">BY ALIDA GARCIA</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="opinion-cards opinion thumbnail col-12 mt-3">
+                    <div class="row ml-0 pl-0 mb-3">
+                      <div class="card border-0">
+                        <a href="#"><img class="card-img-top" src="https://d.newsweek.com/en/full/83499/newt-gingrich.png?w=63&h=63&l=48&t=55&f=d8b4f8dfaad8a5f0f71bffcc6c0d6a77" alt="newt-gingrich"></a>
+                      </div>
+                      <div class=" col-8 col-xs-6">
+                        <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">How the Iowa Caucus Could Shape the Democratic Convention</a></h5>
+                        <span class="card-text text-secondary font-weight-bold">BY NEWT GINGRICH</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <section class="latest-news mt-4">
+                  <h4 class="text-secondary text-uppercase font-weight-bold title-section-main mt-2">Latest News</h4>
+                  <div class="latest-container row no-gutters">
+                    <div class=" col-12 border-bottom mt-2 pb-2">
+                      <div class="row mx-0">
+                        <div class="card border-0">
+                          <a href="#"><img class="card-img-top" src="https://placeimg.com/95/95/any" alt="kirk-douglas-dead"></a>
+                        </div>
+                        <div class="col-8 col-xs-6">
+                          <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">Kirk Douglas Dead: Michael Douglas' Sweet Message to Dad on 103rd Birthday</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-12 border-bottom mt-2 pb-2">
+                      <div class="row mx-0">
+                        <div class="card border-0">
+                          <a href="#"><img class="card-img-top" src="https://placeimg.com/95/95/sepia" alt="jeanine-pirro"></a>
+                        </div>
+                        <div class="col-8 col-xs-6">
+                          <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">Jeanine Pirro Says Dems Are Allowing 'Illegals' to Kill Americans</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-12 border-bottom mt-2 pb-2">
+                      <div class="row mx-0">
+                        <div class="card border-0">
+                          <a href="#"><img class="card-img-top" src="https://placeimg.com/95/95/tech" alt="amazon"></a>
+                        </div>
+                        <div class="col-8 col-xs-6">
+                          <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">'Amazon's Choice' Badge is Being Exploited by Fake Reviews, Research Says</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-12 border-bottom mt-2 pb-2">
+                      <div class="row mx-0">
+                        <div class="card border-0">
+                          <a href="#"><img class="card-img-top" src="https://placeimg.com/95/95/nature" alt="frozen-yogurt-fruit-topping"></a>
+                        </div>
+                        <div class="col-8 col-xs-6">
+                          <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">National Frozen Yogurt Day 2020 Deals and Freebies</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="latest-cards cardlatest thumbnail col-12 border-bottom mt-2 pb-2">
+                      <div class="row mx-0">
+                        <div class="card border-0">
+                          <a href="#"><img class="card-img-top" src="https://placeimg.com/95/95/grayscale" alt="donald-trump-jr"></a>
+                        </div>
+                        <div class="col-8 col-xs-6">
+                          <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">Trump Jr. Says GOP 'Shredded' Pelosi's Impeachment After She Tore Speech</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-12 border-bottom mt-2 pb-2">
+                      <div class="row mx-0">
+                        <div class="card border-0">
+                          <a href="#"><img class="card-img-top" src="https://placeimg.com/95/95/peopole" alt="donald-trump"></a>
+                        </div>
+                        <div class="col-8 col-xs-6">
+                          <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">#AmericansFindTrumpGuilty and #ImpeachedPresident Trend After Acquittal</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" col-12 my-2">
+                      <div class="row mx-0">
+                        <div class="card border-0">
+                          <a href="#"><img class="card-img-top" src="https://placeimg.com/95/95/any" alt="president-donald-trump"></a>
+                        </div>
+                        <div class="col-8 col-xs-6">
+                          <h5 class="card-title mt-0"><a class="text-decoration-none font-weight-bold" href="#">Trump Shares Video Suggesting He Will Be President '4EVA' After Senate Vote</a></h5>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="newsletter-box card bg-light">
+                    <div class="card-body p-4">
+                      <h4 class="signup-header font-weight-bold text-uppercase mb-3">
+                        <span class="section-heading d-flex justify-content-start align-items-center border-bottom-0 m-0 p-0">
+                          <span class="font-weight-bold" >Sign up for our newsletter</span>
+                        </span>
+                    </h4>
+                    <span class="bg-secondary text-white sign-up font-weight-bold p-2">SIGN UP &nbsp;<i class="fas fa-chevron-right"></i></span>
+                    <p class="mt-3 font-weight-bold">Update your preferences <i class="fas fa-angle-double-right"></i></p>
+                  </div>
+                  </div>
+                </section>
+              </section>
+
+
+          </div>
+          </aside>
+          
+        </div>
+
+        <section class="custom-cont in-magazine">
+          <div class="container-fluid">
+          <h4 class="sec-header my-3 text-uppercase font-weight-bold border-bottom mx-3">
+            <span class="def-font d-flex justify-content-center align-items-center py-2">
+              <img class="mr-1" src="images/small-logo.png" alt="img">
+              <a class="text-decoration-none" href="#"><span>IN THE MAGAZINE</span></a>
+            </span>
+          </h4>
+          <div class="row mx-0 grid-wraper">
+            
+            <article class="col-sm-3">
+              <div class="image position-relative">
+                <a href="#">
+                  <img src="https://placeimg.com/286/382/any" alt="img">
+                  <div class=" cat-tag position-absolute bg-white text-center font-weight-bold mag-tag-box">
+                  <span >MARCH 13 ISSUE</span> 
+                </div>
+                </a>
+              </div>
+              <div class="my-3 ">
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-sm-3">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/tech" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-sm-3">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/sepia" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-sm-3">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/any" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+            
+          </div>
+
+
+
+          <div class="row mx-0 grid-wraper">
+            
+            <article class="col-sm-3">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/peopole" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-sm-3">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/tech" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-sm-3">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/sepia" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-sm-3">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/any" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+            
+          </div>
+
+
+
+
+        </div>
+        </section>
+
+
+
+
+        <section class="custom-cont in-magazine">
+          <div class="container-fluid">
+          <h4 class="sec-header my-3 text-uppercase font-weight-bold border-bottom mx-3">
+            <span class="def-font d-flex justify-content-center align-items-center py-2">
+              <img class="mr-1" src="images/small-logo.png" alt="img">
+              <a class="text-decoration-none" href="#"><span>EDITOR'S PICK</span></a>
+            </span>
+          </h4>
+          <div class="row mx-0 grid-wraper">
+            
+            <article class="col-lg-3 col-md-6">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/grayscale" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+                    <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
+            </article>
+
+            <article class="col-lg-3 col-md-6">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/tech" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+                    <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
+            </article>
+
+            <article class="col-lg-3 col-md-6">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/sepia" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+                    <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
+            </article>
+
+            <article class="col-lg-3 col-md-6">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/any" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+                    <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
+            </article>
+            
+          </div>
+
+
+
+          <div class="row mx-0 grid-wraper">
+            
+            <article class="col-lg-3 col-md-6">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/peopole" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+                    <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
+            </article>
+
+            <article class="col-lg-3 col-md-6">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/tech" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+                    <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
+            </article>
+
+            <article class="col-lg-3 col-md-6">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/sepia" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+                    <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
+            </article>
+
+            <article class="col-lg-3 col-md-6">
+              <div class="image">
+                <a href="#">
+                  <img src="https://placeimg.com/286/286/any" alt="img">
+            
+                </a>
+              </div>
+              <div class="my-3 ">
+                <span class="bg-red text-white p-1">Cover</span> <span class="p-1 text-red"><a href="/culture">Culture</a></span>
+              </div>
+              <h5><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+                    <p>Friedrich Karl Berger has been living in the U.S. for decades after working at the Neuengamme death camp in 1945.</p>
+            </article>
+            
+          </div>
+
+
+
+
+        </div>
+        </section>
+
+
+
+        <section class="custom-cont in-magazine">
+          <div class="container-fluid">
+          <h4 class="sec-header my-3 text-uppercase font-weight-bold border-bottom mx-3">
+            <span class="def-font d-flex justify-content-center align-items-center py-2">
+              <img class="mr-1" src="images/small-logo.png" alt="img">
+              <a class="text-decoration-none" href="#"><span>FEATURED SLIDESHOWS</span></a>
+            </span>
+          </h4>
+          <div class="row mx-0 grid-wraper">
+            
+            
+
+            <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="image position-relative">
+                <a href="#">
+                  <img src="https://placeimg.com/392/261/nature" alt="img">
+                </a>
+                <div class="position-absolute lable-featured">
+                  <img src="images/lable.png" alt="img">
+                </div>
+              </div>
+              
+              <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="image position-relative">
+                <a href="#">
+                  <img src="https://placeimg.com/392/261/grayscale" alt="img">
+                  
+                </a>
+                <div class="position-absolute lable-featured">
+                  <img src="images/lable.png" alt="img">
+                </div>
+              </div>
+              
+              <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="image position-relative">
+                <a href="#">
+                  <img src="https://placeimg.com/392/261/peopole" alt="img">
+            
+                </a>
+                <div class="position-absolute lable-featured">
+                  <img src="images/lable.png" alt="img">
+                </div>
+              </div>
+              
+              <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+            
+          </div>
+
+
+
+          <div class="row mx-0 grid-wraper">
+            
+          
+
+            <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="image position-relative">
+                <a href="#">
+                  <img src="https://placeimg.com/392/261/tech" alt="img">
+            
+                </a>
+                <div class="position-absolute lable-featured">
+                  <img src="images/lable.png" alt="img">
+                </div>
+              </div>
+              
+              <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="image position-relative">
+                <a href="#">
+                  <img src="https://placeimg.com/392/261/sepia" alt="img">
+            
+                </a>
+                <div class="position-absolute lable-featured">
+                  <img src="images/lable.png" alt="img">
+                </div>
+              </div>
+              
+              <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+
+            <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+              <div class="image position-relative">
+                <a href="#">
+                  <img src="https://placeimg.com/392/261/any" alt="img">
+            
+                </a>
+                <div class="position-absolute lable-featured">
+                  <img src="images/lable.png" alt="img">
+                </div>
+              </div>
+              
+              <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation in History<span
+                    class="overlay article-overlay"></span></a></h5>
+            </article>
+            
+          </div>
+          </div>
+          </section>
+
+    <div class="picks-sec border-top">
+
+
+      <div class="block-title text-red mx-3 pb-3 pt-4 font-weight-bold">
+        <a href="#">U.S.</a>
+      </div>
+
+
+      <div class="row mx-0">
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/any" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/peopole" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <ul class="p-0 m-0">
+            <li class="d-flex pb-2 border-bottom">
+              <div class="img mr-3 ">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/peopole" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Who is Jon Grissom? Actor Accused of Abuse by Corey Feldman</a></div>
+            </li>
+
+            <li class="d-flex py-2 border-bottom">
+              <div class="img mr-3">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/any" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Joe Biden Questions Funding of Bernie Sanders' Medicare for All</a></div>
+            </li>
+
+            <li class="d-flex pb-2">
+              <div class="img mr-3 pt-2">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/sepia" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold"><a href="#">Trish Regan: Backlash Against Trump Over COVID-19 is </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="picks-sec border-top">
+
+
+      <div class="block-title text-red mx-3 pb-3 pt-4 font-weight-bold">
+        <a href="#">World</a>
+      </div>
+
+
+      <div class="row mx-0">
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/grayscale" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/nature" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <ul class="p-0 m-0">
+            <li class="d-flex pb-2 border-bottom">
+              <div class="img mr-3 ">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/peopole" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Who is Jon Grissom? Actor Accused of Abuse by Corey Feldman</a></div>
+            </li>
+
+            <li class="d-flex py-2 border-bottom">
+              <div class="img mr-3">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/any" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Joe Biden Questions Funding of Bernie Sanders' Medicare for All</a></div>
+            </li>
+
+            <li class="d-flex pb-2">
+              <div class="img mr-3 pt-2">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/sepia" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold"><a href="#">Trish Regan: Backlash Against Trump Over COVID-19 is </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="picks-sec border-top">
+
+
+      <div class="block-title text-red mx-3 pb-3 pt-4 font-weight-bold">
+        <a href="#">Business</a>
+      </div>
+
+
+      <div class="row mx-0">
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/animals" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/peopole" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <ul class="p-0 m-0">
+            <li class="d-flex pb-2 border-bottom">
+              <div class="img mr-3 ">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/peopole" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Who is Jon Grissom? Actor Accused of Abuse by Corey Feldman</a></div>
+            </li>
+
+            <li class="d-flex py-2 border-bottom">
+              <div class="img mr-3">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/animals" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Joe Biden Questions Funding of Bernie Sanders' Medicare for All</a></div>
+            </li>
+
+            <li class="d-flex pb-2">
+              <div class="img mr-3 pt-2">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/grayscale" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold"><a href="#">Trish Regan: Backlash Against Trump Over COVID-19 is </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+
+    <div class="picks-sec border-top">
+
+
+      <div class="block-title text-red mx-3 pb-3 pt-4 font-weight-bold">
+        <a href="#">Tech & Science</a>
+      </div>
+
+
+      <div class="row mx-0">
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/tech" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/peopole" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <ul class="p-0 m-0">
+            <li class="d-flex pb-2 border-bottom">
+              <div class="img mr-3 ">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/peopole" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Who is Jon Grissom? Actor Accused of Abuse by Corey Feldman</a></div>
+            </li>
+
+            <li class="d-flex py-2 border-bottom">
+              <div class="img mr-3">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/nature" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Joe Biden Questions Funding of Bernie Sanders' Medicare for All</a></div>
+            </li>
+
+            <li class="d-flex pb-2">
+              <div class="img mr-3 pt-2">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/grayscale" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold"><a href="#">Trish Regan: Backlash Against Trump Over COVID-19 is </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+
+    <div class="picks-sec border-top">
+
+
+      <div class="block-title text-red mx-3 pb-3 pt-4 font-weight-bold">
+        <a href="#">Culture</a>
+      </div>
+
+
+      <div class="row mx-0">
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/any" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/peopole" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <ul class="p-0 m-0">
+            <li class="d-flex pb-2 border-bottom">
+              <div class="img mr-3 ">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/peopole" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Who is Jon Grissom? Actor Accused of Abuse by Corey Feldman</a></div>
+            </li>
+
+            <li class="d-flex py-2 border-bottom">
+              <div class="img mr-3">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/tech" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Joe Biden Questions Funding of Bernie Sanders' Medicare for All</a></div>
+            </li>
+
+            <li class="d-flex pb-2">
+              <div class="img mr-3 pt-2">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/sepia" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold"><a href="#">Trish Regan: Backlash Against Trump Over COVID-19 is </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+    <div class="picks-sec border-top">
+
+
+      <div class="block-title text-red mx-3 pb-3 pt-4 font-weight-bold">
+        <a href="#">Sports</a>
+      </div>
+
+
+      <div class="row mx-0">
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/any" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <article class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <div class="image position-relative">
+            <a href="#">
+              <img class="w-100" src="https://placeimg.com/392/261/sepia" alt="img">
+
+            </a>
+
+          </div>
+
+          <h5 class="my-3"><a href="#" class="def-font font-weight-bold">OK, Millennial: Boomers Are the Greatest Generation
+              in History<span class="overlay article-overlay"></span></a></h5>
+        </article>
+
+        <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+          <ul class="p-0 m-0">
+            <li class="d-flex pb-2 border-bottom">
+              <div class="img mr-3 ">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/peopole" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Who is Jon Grissom? Actor Accused of Abuse by Corey Feldman</a></div>
+            </li>
+
+            <li class="d-flex py-2 border-bottom">
+              <div class="img mr-3">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/nature" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold">
+                <a href="#">Joe Biden Questions Funding of Bernie Sanders' Medicare for All</a></div>
+            </li>
+
+            <li class="d-flex pb-2">
+              <div class="img mr-3 pt-2">
+                <a href="#"><img class="" src="https://placeimg.com/95/95/sepia" alt="img"></a>
+              </div>
+              <div class="def-font font-weight-bold"><a href="#">Trish Regan: Backlash Against Trump Over COVID-19 is </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    
+    
+
+
+    <div class="row mx-0">
+      <article class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+        <div class="subs-title text-red  pb-3 pt-4 font-weight-bold">
+          <a href="#">SUBSCRIBE</a>
+        </div>
+        <div class="bg-light px-4 custom-py-4-5 d-md-flex">
+          <div class="d-flex">
+            <div class="mag-img-cont position-relative m-auto">
+              <img class="position-absolute" src="https://d.newsweek.com/en/full/1569344/march-06-2020-cover.jpg?w=170&q=95&f=55944e2b38c7b505782d06582edd44fd" alt="img">
+              <img class="position-absolute" src="https://d.newsweek.com/en/full/1572460/march-13-2020.jpg?w=170&q=95&f=52ec8e410e9337459df2777847b09b11" alt="img">
+            </div>
+          </div>
+          <div class="subs-info mt-sm-4 mt-xs-4 ml-3 text-center text-md-left">
+          <h3 class="def-font font-weight-bold">In-depth Stories You Don't See Elsewhere About Topics You Want to Read!
+          </h3>
+          <p class="my-3">All Access + Weekly Delivery.
+            Choose A Membership That's Perfect for You!</p>
+            <span class="p-2 bg-red text-white font-weight-bold mt-2">Subscribe</span>
+          </div>
+        </div>
+      </article>
+
+      <article class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+        <div class="subs-title text-red pb-3 pt-4 font-weight-bold">
+          <a href="#">NEWSLETTER</a>
+        </div>
+        <div class="border d-md-flex pr-md-2">
+          <div class="sign-block-img h-sm-50"></div>
+
+          <div class="subs-info mt-sm-4 mt-xs-4 ml-3 text-center text-md-left">
+            <h3 class="def-font font-weight-bold my-2 d-inline-block">The Starting 5
+            </h3>
+            <p class="my-2">Take back your inbox. Sign up for our newsletter and start making sense of the world around you.
+            </p>
+            <span class="p-2 bg-red text-white font-weight-bold my-2 d-inline-block">Subscribe</span>
+          </div>
+        </div>
+      </article>
+
+
+
+
+</div>
+
+
+
+      
+    </main>
+
+    <footer class="custom-cont bg-white">
+      <div class="container-fluid ">
+        <div class="upper-footer text-grey row mx-0 pt-4 pb-1 d-block d-md-flex justify-content-between border-bottom">
+          <div class="left-cont col-lg-6 col-md-8 col-sm-12 col-xs-12 d-md-flex align-items-end">
+            <h2 class="footer-logo font-weight-bold my-0 logo text-red">Newsweek</h2>
+            <p class=" align-items-end pl-md-3">© 2020 NEWSWEEK</p>
+          </div>
+          <ul class="social pl-3 p-0 col-lg-3 col-md-3 col-sm-12 col-xs-12 list-unstyled my-0 align-items-end d-flex justify-content-strat justify-content-md-end">
+            <li class="d-inline-block ml-0"><a href="#"><i class="align-bottom fab fa-facebook-square social-icon"></i></a></li>
+            <li class="d-inline-block ml-3"><a href="#"><i class="align-bottom fab fa-twitter social-icon"></i></a></li>
+            <li class="d-inline-block ml-3"><a href="#"><i class="align-bottom fab fa-instagram social-icon"></i></a></li>
+            <li class="d-inline-block ml-3"><a href="#"><i class="align-bottom fab fa-tumblr social-icon"></i></a></li>
+            <li class="d-inline-block ml-3"><a href="#"><i class="align-bottom fab fa-linkedin-in social-icon"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="lower-footer d-flex flex-wrap pt-2 pl-3 pb-4 text-grey">
+          <div class="footer-links-edition d-flex">
+            <span class="font-weight-bold">Editions: </span>
+            <ul class="menu p-0 list-unstyled  m-0">
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3 pl-2"><a class="text-decoration-none" href="#"> U.S. Edition</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a class="text-decoration-none" href="#">日本</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a class="text-decoration-none" href="#">Pakistan</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a class="text-decoration-none" href="#">Polska</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a class="text-decoration-none" href="#">Romania</a></li>
+            </ul>
+          </div>
+          <div class="footer-links-menu">
+            <ul class="menu p-0 list-unstyled m-0">
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">About Us</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Corrections</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Contact Us</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Editorial Guidelines</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Advertise</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Copyright</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Terms &amp; Conditions</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Privacy Policy</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Cookie Policy</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Terms of sale</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Archive</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3"><a href="#">Announcements</a></li>
+              <li class="d-inline-block pr-2 mr-2 pr-md-3 mr-md-3 border-right-0"><a href="#">Consent Preferences</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
