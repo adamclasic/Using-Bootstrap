@@ -232,4 +232,21 @@ h5 {
   .lower-footer ul li {
     border-right: 0;
   }
+
+  .container-fluid {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .right-nav-secendary {
+    font-size: 80%;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .weather-cont {
+    display: none;
+  }
 }
