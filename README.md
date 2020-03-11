@@ -23,7 +23,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/adamclasic/Using-Bootstrap">
-    <img src="https://i.dlpng.com/static/png/4034060-newsweek-logo-png-transparent-svg-vector-freebie-supply-newsweek-png-800_600_preview.webp" alt="Logo" width="120" height="60">
+    <img src="https://i.dlpng.com/static/png/4034060-newsweek-logo-png-transparent-svg-vector-freebie-supply-newsweek-png-800_600_preview.webp" alt="Logo" width="150" height="90">
   </a>
 
   <h3 align="center">Using Bootstrap</h3>
