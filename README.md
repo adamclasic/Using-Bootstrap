@@ -29,7 +29,7 @@
   <h3 align="center">Using Bootstrap</h3>
 
   <p align="center">
-    This project is part of the Microverse CSS3 and HTML curriculum!
+    This is a replica of the news site Newsweek.com using the Bootstrap framework.
     <br />
     <a href="https://github.com/adamclasic/Using-Bootstrap/issues"><strong>Explore the docs »</strong></a>
     <br />
@@ -90,7 +90,6 @@ This project was built using these technologies.
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
-* [Microverse](https://www.microverse.org/)
 * [The Odin Project](https://www.theodinproject.com/)
 * [HTML Cheat Sheet](https://htmlcheatsheet.com/js/)
 * [Bootstrap Documentation](https://getbootstrap.com/docs/4.3/getting-started/introduction/)
